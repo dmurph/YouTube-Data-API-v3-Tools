@@ -7,3 +7,6 @@ test.py
 test*.py
 api_key.py
 __pycache__
+.gemini
+.venv
+*.egg-info

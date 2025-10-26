@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-data-api-v3-tools"
+version = "0.0.1"
+authors = [
+  { name="Paul McCarthy", email="happy2code0101@gmail.com" },
+]
+description = "A wrapper around the YouTube Data API v3."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "google-api-python-client",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-auth"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/happycod3r/YouTube-Data-API-v3-Tools"
+"Bug Tracker" = "https://github.com/happycod3r/YouTube-Data-API-v3-Tools/issues"
+
+[tool.setuptools]
+py-modules = ["youtube_api_tools"]
+
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    "pytest",
+    "black",
+]
